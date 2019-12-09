@@ -88,6 +88,9 @@ public class IpRegionMap {
         }
     }
 
+    /**
+     * Tips: the fields of 'begin', 'end' were not needed!
+     */
     public final static class IpRegion {
         private final long begin;
         private final long end;

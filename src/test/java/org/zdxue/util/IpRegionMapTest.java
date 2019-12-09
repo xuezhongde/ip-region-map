@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * @author xuezhongde
  */
-public class TestCase {
+public class IpRegionMapTest {
 
     @Test
     public void test() throws IOException {
