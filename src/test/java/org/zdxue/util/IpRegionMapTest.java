@@ -5,6 +5,8 @@ import org.junit.Test;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.URI;
+import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -13,8 +15,8 @@ import java.util.concurrent.TimeUnit;
 public class IpRegionMapTest {
 
     @Test
-    public void test() throws IOException {
-        InputStream input = new FileInputStream("D:/ip_region.conf");
+    public void test() throws Exception {
+        InputStream input = IpRegionMapTest.class.getClassLoader().getResourceAsStream("ip_region.conf");
         IpRegionMap.load(input);
         System.out.println(IpRegionMap.size() + " elements in the IpRegionMap");
 
